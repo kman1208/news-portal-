@@ -1,0 +1,63 @@
+.main {
+    &__card {
+        @include flex(auto, column, nowrap);
+        min-height: 18.375rem;
+        max-width: 16.875rem;
+        min-width: 16.875rem;
+        gap: 1rem;
+
+        &__img {
+            flex: auto;
+            min-height: 11rem;
+            max-height: 11rem;
+            border-radius: 0.5rem;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        &__title {
+            max-height: 4rem;
+            min-height: 4rem;
+            overflow-y: scroll;
+            overflow-x: hidden;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+
+        &:hover {
+            cursor: pointer;
+            border-radius: 0.5rem;
+            box-shadow: -1px 9px 30px -7px rgba(0,0,0,0.47);
+        }
+
+        // scroll reveal
+        // visibility: hidden;
+
+        @include mobile {
+            max-width: none;
+            min-width: none;
+            width: 100%;
+        }
+
+        @include tablet {
+            max-width: none;
+            min-width: none;
+            width: 100%;
+        }
+
+        @include laptop {
+            max-width: none;
+            min-width: none;
+            width: 100%;
+        }
+
+        @include desktop {
+            max-width: none;
+            min-width: none;
+            width: 100%;
+        }
+    }
+}

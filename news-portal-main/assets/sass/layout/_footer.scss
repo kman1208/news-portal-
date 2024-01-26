@@ -1,0 +1,26 @@
+footer {
+    @include flex(auto, row, wrap);
+    @include fontPrimary();
+    @include padding();
+    min-height: 4.313rem;
+    max-height: 4.313rem;
+    align-items: center;
+    justify-content: center;
+    background-color: $white;
+    // margin-top: 4.313rem;
+
+    position: fixed;
+    width: 100%;
+    z-index: 2000;
+    bottom: 0;
+
+    p {
+        font-size: 1rem;
+        font-weight: bold;
+        color: $black40;
+    }
+
+    @include mobile {
+        margin-top: 1rem;
+    }
+}

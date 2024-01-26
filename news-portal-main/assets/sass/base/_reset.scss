@@ -1,0 +1,63 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    @include flex(auto, column, wrap);
+    color: $black80;
+    min-height: 100vh; // ocupar a tela inteira
+}
+
+a {
+    text-decoration: none;
+    color: $black80;
+    
+    &:focus {
+        color: $black80;
+    }
+
+    &:visited {
+        color: $black80;
+    }
+}
+
+i {
+    color: $black60;
+    
+    &:hover {
+        cursor: pointer;
+    }
+
+    @include mobile {
+        width: 0.5rem;
+        height: 0.5rem;
+    }
+}
+
+.ri-lightbulb-line {
+    color: $white;
+}
+
+::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 1rem;
+    background-color: $black80;
+
+    &:hover {
+        background-color: $black60;
+    }
+}
+
+::selection {
+    color: $white;
+    background: $black60;
+}

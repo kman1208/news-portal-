@@ -1,0 +1,51 @@
+.splash {
+    @include element();
+
+    &--active {
+        @include flex(auto, column, wrap);
+        gap: 1rem;
+    }
+
+    &__logo {
+        @include flex(auto, column, wrap);
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+
+        img {
+            width: 100%;
+            // animation
+            animation: rotateOut;
+            animation-duration: 2s;
+            animation-delay: 1s;
+        }
+
+        @include mobile {
+            img {
+                max-width: 10rem;
+            }
+        }
+
+        @include tablet {
+            img {
+                max-width: 10rem;
+            }
+        }
+
+        @include laptop {
+            img {
+                max-width: 10rem;
+            }
+        }
+
+        h3 {
+            color: white;
+            text-align: center;
+        }
+    }
+
+    // animation
+    animation: fadeOut;
+    animation-duration: 1s;
+    animation-delay: 2s;
+}

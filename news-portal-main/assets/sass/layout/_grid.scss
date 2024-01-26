@@ -1,0 +1,30 @@
+.main {
+    &__h2 {
+        margin-top: 2.5rem;
+    }
+
+    &__container {
+        @include grid();
+        height: 100%;
+        margin-top: 1rem;
+        column-gap: 1.5rem;
+        row-gap: 4rem;
+
+        justify-items: center;
+        align-items: center;
+
+        @include smMobile {
+            @include flex(auto, column, wrap);
+            row-gap: 2rem;
+        }
+
+        @include mobile {
+            @include flex(auto, column, wrap);
+            row-gap: 2rem;
+        }
+
+        @include tablet {
+            @include grid();
+        }
+    }
+}

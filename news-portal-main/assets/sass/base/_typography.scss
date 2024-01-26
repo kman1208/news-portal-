@@ -1,0 +1,122 @@
+// google fonts
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap');
+
+// family
+h1, h2, h4 {
+    @include fontSecundary();
+    font-weight: bold;
+}
+
+h3 {
+    @include fontPrimary();
+    font-weight: bold;
+    text-shadow: 0px 3px 5px rgba(0, 0, 0, 1);
+}
+
+p, em {
+    @include fontPrimary();
+}
+
+// size
+h1 {
+    font-size: 3rem;
+
+    @include smMobile {
+        font-size: 1rem;
+    }
+
+    @include mobile {
+        font-size: 2.25rem;
+    }
+
+    @include tablet {
+        font-size: 2.25rem;
+    }
+
+    @include laptop {
+        font-size: 2.25rem;
+    }
+
+    @include desktop {
+        font-size: 2.25rem;
+    }
+}
+
+h2 {
+    font-size: 2.25rem;
+
+    @include smMobile {
+        font-size: 1rem;
+    }
+
+
+    @include mobile {
+        font-size: 1.5rem;
+    }
+
+    @include tablet {
+        font-size: 1.5rem;
+    }
+
+    @include laptop {
+        font-size: 1.5rem;
+    }
+
+    @include desktop {
+        font-size: 1.5rem;
+    }
+}
+
+h3 {
+    font-size: 2rem;
+
+    @include smMobile {
+        font-size: 1rem;
+    }
+
+    @include mobile {
+        font-size: 1rem;
+    }
+
+    @include tablet {
+        font-size: 1rem;
+    }
+
+    @include laptop {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    @include desktop {
+        font-size: 1.5rem;
+    }
+}
+
+h4 {
+    font-size: 1.5rem;
+
+    @include smMobile {
+        font-size: 1rem;
+    }
+
+    @include mobile {
+        font-size: 1rem;
+    }
+
+    @include tablet {
+        font-size: 1rem;
+    }
+
+    @include laptop {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    @include desktop {
+        font-size: 1rem;
+    }
+}
+
+em {
+    font-size: 1.625rem;
+}
